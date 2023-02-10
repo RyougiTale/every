@@ -1,5 +1,14 @@
-
+#include <vector>
 #include <string>
+
+class Client
+{
+
+    void register_to(EveryServer &server)
+    {
+    }
+};
+
 class EveryServer
 {
 public:
@@ -9,14 +18,10 @@ public:
     void connect_server(EveryServer &server)
     {
     }
-};
 
-class Client
-{
-
-    void register_to(EveryServer &server)
-    {
-    }
+private:
+    std::vector<std::string> servers;
+    std::vector<Client> clients;
 };
 
 int main()
